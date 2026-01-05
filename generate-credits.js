@@ -9,18 +9,48 @@ const {
   textColor,
   backgroundColor,
   backgroundAnimation,
-  particleAnimation
+  particleAnimation,
+  textAlign,
+  fontFamily,
+  embedFont,
+  embeddedFontFile
 } = config;
 
 const lineHeight = fontSize * 1.4;
 const totalHeight = credits.length * lineHeight;
 
+// Alignment maps
+const anchorMap = { left: "start", center: "middle", right: "end" };
+const xMap = { left: 0, center: 300, right: 600 };
+
+const anchor = anchorMap[textAlign] || "start";
+const xPos = xMap[textAlign] || 0;
+
 // Build <tspan> lines
 const lines = credits
-  .map((line, i) => `<tspan x="0" dy="${i === 0 ? 0 : lineHeight}">${line}</tspan>`)
+  .map((line, i) => `<tspan x="${xPos}" dy="${i === 0 ? 0 : lineHeight}">${line}</tspan>`)
   .join("\n");
 
-// Optional animated background gradient
+// Optional embedded font
+let fontFaceCSS = "";
+
+if (embedFont && embeddedFontFile && fs.existsSync(embeddedFontFile)) {
+  const fontData = fs.readFileSync(embeddedFontFile).toString("base64");
+
+  fontFaceCSS = `
+    @font-face {
+      font-family: "EmbeddedFont";
+      src: url("data:font/woff2;base64,${fontData}") format("woff2");
+      font-weight: normal;
+      font-style: normal;
+    }
+  `;
+
+  // Override fontFamily to use embedded font
+  fontFamily = `"EmbeddedFont"`;
+}
+
+// Background animation
 const animatedBackground = backgroundAnimation
   ? `
     <defs>
@@ -41,7 +71,7 @@ const animatedBackground = backgroundAnimation
   `
   : `<rect width="100%" height="100%" fill="${backgroundColor}" />`;
 
-// Optional particle animation
+// Particle animation
 const particles = particleAnimation
   ? Array.from({ length: 12 })
       .map((_, i) => {
@@ -70,19 +100,20 @@ const svg = `
 <svg width="600" height="200" xmlns="http://www.w3.org/2000/svg">
 
   ${animatedBackground}
-
   ${particles}
 
   <style>
+    ${fontFaceCSS}
+
     text {
-      font-family: sans-serif;
+      font-family: ${fontFamily};
       font-size: ${fontSize}px;
       fill: ${textColor};
     }
   </style>
 
   <g>
-    <text y="250">
+    <text y="250" text-anchor="${anchor}">
 ${lines}
     </text>
 
