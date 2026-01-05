@@ -1,6 +1,13 @@
 {
-  "speed": 15,
+  "speed": 20,
   "fontSize": 20,
+
+  "textColor": "#ffffff",
+  "backgroundColor": "#000000",
+
+  "backgroundAnimation": true,
+  "particleAnimation": true,
+
   "credits": [
     "Project Lead: Alice",
     "Backend: Bob",
