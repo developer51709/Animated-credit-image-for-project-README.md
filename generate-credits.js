@@ -4,9 +4,12 @@ const config = JSON.parse(fs.readFileSync("credits.json", "utf8"));
 
 const { credits, speed, fontSize } = config;
 
-const textBlock = credits.join("\n");
-
 const lineHeight = fontSize * 1.4;
+
+const lines = credits
+  .map((line, i) => `<tspan x="0" dy="${i === 0 ? 0 : lineHeight}">${line}</tspan>`)
+  .join("\n");
+
 const totalHeight = credits.length * lineHeight;
 
 const svg = `
@@ -14,14 +17,13 @@ const svg = `
   <style>
     text {
       font-family: sans-serif;
-      white-space: pre;
       font-size: ${fontSize}px;
     }
   </style>
 
   <g>
     <text y="250">
-${textBlock}
+${lines}
     </text>
 
     <animateTransform
