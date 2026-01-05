@@ -1,0 +1,10 @@
+{
+  "speed": 20,
+  "fontSize": 20,
+  "credits": [
+    "Project Lead: Alice",
+    "Backend: Bob",
+    "Design: Carol",
+    "QA: Dave"
+  ]
+}
