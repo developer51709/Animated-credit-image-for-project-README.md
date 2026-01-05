@@ -8,6 +8,12 @@
   "backgroundAnimation": true,
   "particleAnimation": true,
 
+  "textAlign": "center",
+
+  "fontFamily": "Inter, sans-serif",
+  "embedFont": false,
+  "embeddedFontFile": "fonts/Inter-Regular.woff2",
+
   "credits": [
     "Project Lead: Alice",
     "Backend: Bob",
