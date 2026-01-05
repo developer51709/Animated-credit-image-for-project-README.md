@@ -1,0 +1,27 @@
+<svg width="600" height="200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text {
+      font-family: sans-serif;
+      white-space: pre;
+      font-size: 20px;
+    }
+  </style>
+
+  <g>
+    <text y="250">
+Project Lead: Alice
+Backend: Bob
+Design: Carol
+QA: Dave
+    </text>
+
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      from="0 0"
+      to="0 -362"
+      dur="15s"
+      repeatCount="indefinite"
+    />
+  </g>
+</svg>
