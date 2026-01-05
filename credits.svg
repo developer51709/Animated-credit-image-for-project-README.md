@@ -1,18 +1,182 @@
 <svg width="600" height="200" xmlns="http://www.w3.org/2000/svg">
+
+  
+    <defs>
+      <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#000000">
+          <animate attributeName="stop-color"
+            values="#000000;#222222;#000000"
+            dur="10s" repeatCount="indefinite" />
+        </stop>
+        <stop offset="100%" stop-color="#111111">
+          <animate attributeName="stop-color"
+            values="#111111;#000000;#111111"
+            dur="10s" repeatCount="indefinite" />
+        </stop>
+      </linearGradient>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#bgGrad)" />
+  
+
+  
+          <circle cx="478.3287740701556" cy="220" r="1.4794734112229004" fill="#ffffff" opacity="0.3">
+            <animate attributeName="cy"
+              from="220" to="-20"
+              dur="13.714173384577416s"
+              repeatCount="indefinite" />
+            <animate attributeName="cx"
+              from="478.3287740701556" to="470.2923010933243"
+              dur="13.714173384577416s"
+              repeatCount="indefinite" />
+          </circle>
+        
+
+          <circle cx="485.4472537208851" cy="220" r="1.0636261987723366" fill="#ffffff" opacity="0.3">
+            <animate attributeName="cy"
+              from="220" to="-20"
+              dur="11.863536305031948s"
+              repeatCount="indefinite" />
+            <animate attributeName="cx"
+              from="485.4472537208851" to="501.5830349042308"
+              dur="11.863536305031948s"
+              repeatCount="indefinite" />
+          </circle>
+        
+
+          <circle cx="522.3457753653327" cy="220" r="1.0749446226027406" fill="#ffffff" opacity="0.3">
+            <animate attributeName="cy"
+              from="220" to="-20"
+              dur="12.551939998086976s"
+              repeatCount="indefinite" />
+            <animate attributeName="cx"
+              from="522.3457753653327" to="531.2164901135715"
+              dur="12.551939998086976s"
+              repeatCount="indefinite" />
+          </circle>
+        
+
+          <circle cx="371.51695106387945" cy="220" r="1.9843779468316767" fill="#ffffff" opacity="0.3">
+            <animate attributeName="cy"
+              from="220" to="-20"
+              dur="12.665011524284509s"
+              repeatCount="indefinite" />
+            <animate attributeName="cx"
+              from="371.51695106387945" to="351.96084013557595"
+              dur="12.665011524284509s"
+              repeatCount="indefinite" />
+          </circle>
+        
+
+          <circle cx="377.53951963030823" cy="220" r="3.0280212684782604" fill="#ffffff" opacity="0.3">
+            <animate attributeName="cy"
+              from="220" to="-20"
+              dur="13.856437651386337s"
+              repeatCount="indefinite" />
+            <animate attributeName="cx"
+              from="377.53951963030823" to="359.5062885599396"
+              dur="13.856437651386337s"
+              repeatCount="indefinite" />
+          </circle>
+        
+
+          <circle cx="388.8785393435143" cy="220" r="2.902286768398939" fill="#ffffff" opacity="0.3">
+            <animate attributeName="cy"
+              from="220" to="-20"
+              dur="13.685238787242534s"
+              repeatCount="indefinite" />
+            <animate attributeName="cx"
+              from="388.8785393435143" to="380.31809688818106"
+              dur="13.685238787242534s"
+              repeatCount="indefinite" />
+          </circle>
+        
+
+          <circle cx="467.0725307436018" cy="220" r="3.365236803504599" fill="#ffffff" opacity="0.3">
+            <animate attributeName="cy"
+              from="220" to="-20"
+              dur="6.303663280475977s"
+              repeatCount="indefinite" />
+            <animate attributeName="cx"
+              from="467.0725307436018" to="484.27878059311774"
+              dur="6.303663280475977s"
+              repeatCount="indefinite" />
+          </circle>
+        
+
+          <circle cx="515.4111223039146" cy="220" r="3.8138994309835015" fill="#ffffff" opacity="0.3">
+            <animate attributeName="cy"
+              from="220" to="-20"
+              dur="11.200825265071071s"
+              repeatCount="indefinite" />
+            <animate attributeName="cx"
+              from="515.4111223039146" to="513.0171806697283"
+              dur="11.200825265071071s"
+              repeatCount="indefinite" />
+          </circle>
+        
+
+          <circle cx="507.32282357909526" cy="220" r="2.5234082964008198" fill="#ffffff" opacity="0.3">
+            <animate attributeName="cy"
+              from="220" to="-20"
+              dur="6.169454920665128s"
+              repeatCount="indefinite" />
+            <animate attributeName="cx"
+              from="507.32282357909526" to="508.05176621362784"
+              dur="6.169454920665128s"
+              repeatCount="indefinite" />
+          </circle>
+        
+
+          <circle cx="393.4726367067456" cy="220" r="1.1560647067494574" fill="#ffffff" opacity="0.3">
+            <animate attributeName="cy"
+              from="220" to="-20"
+              dur="6.479743621932782s"
+              repeatCount="indefinite" />
+            <animate attributeName="cx"
+              from="393.4726367067456" to="412.7133180047068"
+              dur="6.479743621932782s"
+              repeatCount="indefinite" />
+          </circle>
+        
+
+          <circle cx="140.0333933034386" cy="220" r="2.4734259384142865" fill="#ffffff" opacity="0.3">
+            <animate attributeName="cy"
+              from="220" to="-20"
+              dur="13.634015747548005s"
+              repeatCount="indefinite" />
+            <animate attributeName="cx"
+              from="140.0333933034386" to="132.3403815652167"
+              dur="13.634015747548005s"
+              repeatCount="indefinite" />
+          </circle>
+        
+
+          <circle cx="577.6540997101988" cy="220" r="1.225542543979679" fill="#ffffff" opacity="0.3">
+            <animate attributeName="cy"
+              from="220" to="-20"
+              dur="9.292521998578394s"
+              repeatCount="indefinite" />
+            <animate attributeName="cx"
+              from="577.6540997101988" to="564.7394215994946"
+              dur="9.292521998578394s"
+              repeatCount="indefinite" />
+          </circle>
+        
+
   <style>
     text {
       font-family: sans-serif;
-      white-space: pre;
       font-size: 20px;
+      fill: #ffffff;
     }
   </style>
 
   <g>
     <text y="250">
-Project Lead: Alice
-Backend: Bob
-Design: Carol
-QA: Dave
+<tspan x="0" dy="0">Project Lead: Alice</tspan>
+<tspan x="0" dy="28">Backend: Bob</tspan>
+<tspan x="0" dy="28">Design: Carol</tspan>
+<tspan x="0" dy="28">QA: Dave</tspan>
     </text>
 
     <animateTransform
@@ -20,8 +184,9 @@ QA: Dave
       type="translate"
       from="0 0"
       to="0 -362"
-      dur="15s"
+      dur="20s"
       repeatCount="indefinite"
     />
   </g>
+
 </svg>
